@@ -14,7 +14,7 @@ function App() {
       <main className="mx-auto max-w-7xl px-6 pb-20 pt-16 md:px-10 lg:px-12">
         <section className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div>
-            <h1 className="whitespace-nowrap font-display text-[clamp(2.6rem,7vw,4.9rem)] font-bold uppercase leading-none tracking-tight text-ink">
+            <h1 className="font-display text-[clamp(2.4rem,7vw,4.9rem)] font-bold uppercase leading-none tracking-tight text-ink">
               Manesha Chand
             </h1>
             <p className="mt-6 max-w-3xl font-mono text-xs uppercase leading-6 tracking-[0.28em] text-inkDark md:text-sm">
