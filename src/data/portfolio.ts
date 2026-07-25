@@ -1,8 +1,12 @@
+export const email = 'placeholder@email.com';
+
 export const navLinks = [
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
   { label: 'GitHub', href: '#' },
   { label: 'Kaggle', href: '#' },
   { label: 'Blog', href: '#' },
-  { label: 'Email', href: 'mailto:placeholder@email.com' },
+  { label: 'Email', href: `mailto:${email}` },
 ];
 
 export const experience = [
