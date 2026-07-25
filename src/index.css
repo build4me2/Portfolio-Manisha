@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 :root {
-  color: #006fa6;
-  background: #f7f7f4;
   font-synthesis: none;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
