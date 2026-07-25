@@ -4,7 +4,7 @@ import { MetaBlock } from './components/MetaBlock';
 import { Nav } from './components/Nav';
 import { ProjectCard } from './components/ProjectCard';
 import { SectionHeading } from './components/SectionHeading';
-import { experience, projects } from './data/portfolio';
+import { email, experience, projects } from './data/portfolio';
 
 function App() {
   return (
@@ -58,6 +58,17 @@ function App() {
         </section>
 
       </main>
+
+      <footer className="mx-auto max-w-7xl px-6 pb-10 md:px-10 lg:px-12">
+        <div className="border-t-2 border-dashed border-ink pt-6">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 font-mono text-xs uppercase tracking-wide text-inkDark md:text-sm">
+            <a href={`mailto:${email}`} className="hover:underline hover:decoration-dashed hover:underline-offset-4">
+              {email}
+            </a>
+            <p>© 2026 Manesha Chand</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
