@@ -32,7 +32,7 @@ function App() {
         <Divider />
 
         <section className="grid gap-16 lg:grid-cols-2">
-          <div id="experience" className="scroll-mt-24">
+          <div id="experience" className="scroll-mt-32 md:scroll-mt-24">
             <SectionHeading>Experience</SectionHeading>
             <div className="space-y-8">
               {experience.map((item) => (
@@ -47,7 +47,7 @@ function App() {
             </div>
           </div>
 
-          <div id="projects" className="scroll-mt-24">
+          <div id="projects" className="scroll-mt-32 md:scroll-mt-24">
             <SectionHeading>Projects</SectionHeading>
             <div>
               {projects.map((project) => (

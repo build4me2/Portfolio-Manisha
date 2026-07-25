@@ -3,7 +3,7 @@ import { navLinks } from '../data/portfolio';
 export function Nav() {
   return (
     <header className="sticky top-0 z-10 bg-paper/95 backdrop-blur">
-      <nav aria-label="Main" className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-3 px-6 py-6 font-display text-base uppercase text-ink md:text-lg">
+      <nav aria-label="Main" className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-5 gap-y-2 px-6 py-3 font-display text-sm uppercase text-ink md:gap-x-10 md:gap-y-3 md:py-6 md:text-lg">
         {navLinks.map((link) => {
           const isExternal = link.href.startsWith('http');
           return (
