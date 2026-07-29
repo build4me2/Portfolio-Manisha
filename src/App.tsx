@@ -34,7 +34,7 @@ function App() {
         <section className="grid gap-16 lg:grid-cols-2">
           <div id="experience" className="scroll-mt-32 md:scroll-mt-24">
             <SectionHeading>Experience</SectionHeading>
-            <div className="space-y-8">
+            <div className="space-y-6">
               {experience.map((item) => (
                 <Entry
                   key={`${item.organization}-${item.period}`}
@@ -59,8 +59,8 @@ function App() {
 
       </main>
 
-      <footer className="mx-auto max-w-7xl px-6 pb-10 md:px-10 lg:px-12">
-        <div className="border-t-2 border-dashed border-ink pt-6">
+      <footer className="mx-auto max-w-7xl px-6 pb-12 md:px-10 lg:px-12">
+        <div className="border-t-2 border-dashed border-ink pt-8">
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 font-mono text-xs uppercase tracking-wide text-inkDark md:text-sm">
             <a href={`mailto:${email}`} className="hover:underline hover:decoration-dashed hover:underline-offset-4">
               {email}

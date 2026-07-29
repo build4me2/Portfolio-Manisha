@@ -7,7 +7,7 @@ type EntryProps = {
 
 export function Entry({ title, subtitle, period, description }: EntryProps) {
   return (
-    <article className="space-y-2 border-b border-dashed border-ink/30 pb-7 last:border-b-0">
+    <article className="space-y-2 border-b border-dashed border-ink/50 pb-6 last:border-b-0">
       <h3 className="font-display text-xl font-bold uppercase leading-tight text-ink md:text-2xl">
         {title}
       </h3>

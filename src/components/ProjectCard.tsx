@@ -8,7 +8,7 @@ type ProjectCardProps = {
 export function ProjectCard({ title, href, description, meta }: ProjectCardProps) {
   const hasLink = href !== '' && href !== '#';
   return (
-    <article className="group border-b border-dashed border-ink/30 py-5 first:pt-0">
+    <article className="group border-b border-dashed border-ink/50 py-6 first:pt-0">
       {hasLink ? (
         <a
           href={href}
