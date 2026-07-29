@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        paper: '#f7f7f4',
-        ink: '#006fa6',
-        inkDark: '#005c8a',
-        inkSoft: '#d7edf7',
+        paper: '#f2f2ef',
+        ink: '#246084',
+        inkDark: '#0c3c54',
+        inkSoft: '#d9e6ee',
       },
       fontFamily: {
-        display: ['Georgia', 'Times New Roman', 'serif'],
+        display: ['Tinos', 'Times New Roman', 'Georgia', 'serif'],
         mono: ['IBM Plex Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
         body: ['Inter', 'Arial', 'sans-serif'],
       },
