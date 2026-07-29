@@ -15,7 +15,7 @@ function App() {
         <section className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
           <div>
             <h1 className="text-balance font-display text-[clamp(2.4rem,7vw,4.9rem)] font-bold uppercase leading-none tracking-tight text-ink">
-              Manesha Chand
+              Manisha Chand
             </h1>
             <p className="mt-6 max-w-3xl font-mono text-xs uppercase leading-6 tracking-[0.2em] text-inkDark md:text-sm md:tracking-[0.28em]">
               Computer Science · Software Engineering · Creative Technology
@@ -65,7 +65,7 @@ function App() {
             <a href={`mailto:${email}`} className="hover:underline hover:decoration-dashed hover:underline-offset-4">
               {email}
             </a>
-            <p>© 2026 Manesha Chand</p>
+            <p>© 2026 Manisha Chand</p>
           </div>
         </div>
       </footer>

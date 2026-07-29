@@ -1,4 +1,4 @@
-# Manesha Portfolio New
+# Manisha Portfolio
 
 Fresh portfolio concept built with Vite, React, TypeScript, and Tailwind CSS.
 
