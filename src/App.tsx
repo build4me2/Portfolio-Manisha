@@ -1,44 +1,52 @@
+import { useLayoutEffect } from 'react';
+import { DecodingText } from './components/DecodingText';
 import { Divider } from './components/Divider';
 import { Entry } from './components/Entry';
-import { MetaBlock } from './components/MetaBlock';
 import { Nav } from './components/Nav';
 import { ProjectCard } from './components/ProjectCard';
 import { SectionHeading } from './components/SectionHeading';
 import { email, experience, projects } from './data/portfolio';
 
 function App() {
+  useLayoutEffect(() => {
+    const previousScrollRestoration = window.history.scrollRestoration;
+    window.history.scrollRestoration = 'manual';
+
+    const scrollToTop = () => window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    scrollToTop();
+    const frameId = window.requestAnimationFrame(scrollToTop);
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.history.scrollRestoration = previousScrollRestoration;
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-paper text-ink">
       <Nav />
 
-      <main className="mx-auto max-w-7xl px-6 pb-20 pt-16 md:px-10 lg:px-12">
-        <section className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-          <div>
-            <h1 className="text-balance font-display text-[clamp(2.4rem,7vw,4.9rem)] font-bold uppercase leading-none tracking-tight text-ink">
-              Manisha Chand
-            </h1>
-            <p className="mt-6 max-w-3xl font-mono text-xs uppercase leading-6 tracking-[0.2em] text-inkDark md:text-sm md:tracking-[0.28em]">
-              Computer Science · Software Engineering · Creative Technology
-            </p>
-          </div>
-
-          <div className="grid grid-cols-3 gap-3 sm:gap-5">
-            <MetaBlock label="STATUS" value="BUILDING" />
-            <MetaBlock label="OUTPUT" value="PORTFOLIO 01" />
-            <MetaBlock label="SEED" value="2026" />
-          </div>
+      <main className="mx-auto max-w-7xl px-6 pb-20 pt-8 md:px-10 lg:px-12">
+        <section>
+          <h1 className="font-title text-[clamp(2rem,6vw,4.5rem)] font-normal uppercase leading-tight tracking-tight text-ink lg:whitespace-nowrap">
+            <DecodingText text="Manisha Chand" delay={100} />
+          </h1>
+          <p className="reveal-content mt-6 max-w-4xl font-subtitle text-xs uppercase leading-6 tracking-[0.12em] text-inkDark md:text-sm md:tracking-[0.18em]" style={{ animationDelay: '100ms' }}>
+            Computer Science · Software Engineering · Creative Technology
+          </p>
         </section>
 
         <Divider />
 
-        <section className="grid gap-16 lg:grid-cols-2">
+        <section className="grid gap-16 pt-8 lg:grid-cols-2">
           <div id="experience" className="scroll-mt-32 md:scroll-mt-24">
-            <SectionHeading>Experience</SectionHeading>
-            <div className="space-y-6">
+            <SectionHeading delay={500}>Experience</SectionHeading>
+            <div className="reveal-content space-y-6" style={{ animationDelay: '500ms' }}>
               {experience.map((item) => (
                 <Entry
                   key={`${item.organization}-${item.period}`}
                   title={item.organization}
+                  href={item.href}
                   subtitle={item.role}
                   period={item.period}
                   description={item.description}
@@ -48,8 +56,8 @@ function App() {
           </div>
 
           <div id="projects" className="scroll-mt-32 md:scroll-mt-24">
-            <SectionHeading>Projects</SectionHeading>
-            <div>
+            <SectionHeading delay={580}>Projects</SectionHeading>
+            <div className="reveal-content" style={{ animationDelay: '580ms' }}>
               {projects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}

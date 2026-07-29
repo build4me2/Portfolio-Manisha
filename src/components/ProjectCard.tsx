@@ -1,11 +1,10 @@
 type ProjectCardProps = {
   title: string;
   href: string;
-  description: string;
   meta: string;
 };
 
-export function ProjectCard({ title, href, description, meta }: ProjectCardProps) {
+export function ProjectCard({ title, href, meta }: ProjectCardProps) {
   const hasLink = href !== '' && href !== '#';
   return (
     <article className="group border-b border-dashed border-ink/50 py-6 first:pt-0">
@@ -23,7 +22,6 @@ export function ProjectCard({ title, href, description, meta }: ProjectCardProps
         <span className="font-display text-xl font-bold text-ink md:text-2xl">{title}</span>
       )}
       <p className="mt-2 font-mono text-xs uppercase tracking-wide text-inkDark md:text-sm">{meta}</p>
-      <p className="mt-3 max-w-2xl font-body text-base leading-7 text-ink md:text-lg md:leading-8">{description}</p>
     </article>
   );
 }
