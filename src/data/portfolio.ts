@@ -44,27 +44,22 @@ export const experience = [
 export const projects = [
   {
     title: 'Chiya Pasal',
-    href: '#',
+    href: 'https://github.com/autonome-research/chiya-pasal',
     meta: 'TYPESCRIPT · SQLITE · LLM AGENTS',
   },
   {
-    title: 'Nemotron Reasoning Harness',
-    href: '#',
-    meta: 'PYTHON · PEFT/LORA · MULTI-GPU',
-  },
-  {
     title: 'Basic File System',
-    href: '#',
+    href: 'https://github.com/build4me2/Basic-Filesystem',
     meta: 'C · LINUX · OS',
   },
   {
-    title: 'Bytecode Interpreter & Virtual Machine',
-    href: '#',
+    title: 'Stack Machine Interpreter',
+    href: 'https://github.com/build4me2/Stack-Machine-Interpreter',
     meta: 'JAVA · VM',
   },
   {
-    title: 'Multithreaded Police Dispatch Analytics',
-    href: '#',
+    title: 'Police Dispatch Analytics',
+    href: 'https://github.com/build4me2/Police-Dispatch-Analytics',
     meta: 'C · POSIX THREADS · OS',
   },
 ];

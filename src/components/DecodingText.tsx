@@ -28,10 +28,11 @@ function decodeFrame(text: string, lockedCharacters: number, frame: number) {
 type DecodingTextProps = {
   text: string;
   delay?: number;
+  duration?: number;
   className?: string;
 };
 
-export function DecodingText({ text, delay = 0, className }: DecodingTextProps) {
+export function DecodingText({ text, delay = 0, duration = 2304, className }: DecodingTextProps) {
   const reduceMotion = typeof window !== 'undefined'
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const [displayText, setDisplayText] = useState(() => (reduceMotion ? text : ''));
@@ -40,6 +41,7 @@ export function DecodingText({ text, delay = 0, className }: DecodingTextProps) 
     if (reduceMotion) return;
 
     const characterCount = text.replace(/\s/g, '').length;
+    const frameDuration = duration / (characterCount * 3);
     let frame = 0;
     let intervalId: ReturnType<typeof setInterval> | undefined;
 
@@ -55,14 +57,14 @@ export function DecodingText({ text, delay = 0, className }: DecodingTextProps) 
         }
 
         setDisplayText(decodeFrame(text, lockedCharacters, frame));
-      }, 42);
+      }, frameDuration);
     }, delay);
 
     return () => {
       window.clearTimeout(timeoutId);
       if (intervalId) window.clearInterval(intervalId);
     };
-  }, [delay, reduceMotion, text]);
+  }, [delay, duration, reduceMotion, text]);
 
   return (
     <span className={`decoding-text${className ? ` ${className}` : ''}`} aria-label={text}>

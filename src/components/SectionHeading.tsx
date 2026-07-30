@@ -5,7 +5,7 @@ type SectionHeadingProps = {
   delay?: number;
 };
 
-export function SectionHeading({ children, delay = 700 }: SectionHeadingProps) {
+export function SectionHeading({ children, delay = 100 }: SectionHeadingProps) {
   return (
     <h2 className="mb-8">
       <DecodingText

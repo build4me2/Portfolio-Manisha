@@ -32,7 +32,7 @@ function App() {
             <DecodingText text="Manisha Chand" delay={100} />
           </h1>
           <p className="reveal-content mt-6 max-w-4xl font-subtitle text-xs uppercase leading-6 tracking-[0.12em] text-inkDark md:text-sm md:tracking-[0.18em]" style={{ animationDelay: '100ms' }}>
-            Computer Science · Software Engineering · Creative Technology
+            Energy Solutions · Digital Governance · Practical Optimization
           </p>
         </section>
 
@@ -40,8 +40,8 @@ function App() {
 
         <section className="grid gap-16 pt-8 lg:grid-cols-2">
           <div id="experience" className="scroll-mt-32 md:scroll-mt-24">
-            <SectionHeading delay={500}>Experience</SectionHeading>
-            <div className="reveal-content space-y-6" style={{ animationDelay: '500ms' }}>
+            <SectionHeading delay={100}>Experience</SectionHeading>
+            <div className="reveal-content space-y-6" style={{ animationDelay: '100ms' }}>
               {experience.map((item) => (
                 <Entry
                   key={`${item.organization}-${item.period}`}
@@ -56,8 +56,8 @@ function App() {
           </div>
 
           <div id="projects" className="scroll-mt-32 md:scroll-mt-24">
-            <SectionHeading delay={580}>Projects</SectionHeading>
-            <div className="reveal-content" style={{ animationDelay: '580ms' }}>
+            <SectionHeading delay={100}>Projects</SectionHeading>
+            <div className="reveal-content" style={{ animationDelay: '100ms' }}>
               {projects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
@@ -69,7 +69,7 @@ function App() {
 
       <footer className="mx-auto max-w-7xl px-6 pb-12 md:px-10 lg:px-12">
         <div className="border-t-2 border-dashed border-ink pt-8">
-          <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 font-mono text-xs uppercase tracking-wide text-inkDark md:text-sm">
+          <div className="reveal-content flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 font-mono text-xs uppercase tracking-wide text-inkDark md:text-sm" style={{ animationDelay: '100ms' }}>
             <a href={`mailto:${email}`} className="hover:underline hover:decoration-dashed hover:underline-offset-4">
               {email}
             </a>
