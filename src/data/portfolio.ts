@@ -4,6 +4,7 @@ export const navLinks = [
   { label: 'Resume', href: '' },
   { label: 'GitHub', href: 'https://github.com/build4me2' },
   { label: 'LinkedIn', href: '#' },
+  { label: 'Blog', href: 'https://build4me2.github.io/' },
   { label: 'Email', href: `mailto:${email}` },
 ];
 
