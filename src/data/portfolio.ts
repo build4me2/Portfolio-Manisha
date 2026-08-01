@@ -1,7 +1,7 @@
 export const email = 'chandmanisha00@gmail.com';
 
 export const navLinks = [
-  { label: 'Resume', href: '' },
+  { label: 'Resume', href: '/Manisha-Chand-Resume.docx' },
   { label: 'GitHub', href: 'https://github.com/build4me2' },
   { label: 'LinkedIn', href: '#' },
   { label: 'Blog', href: 'https://build4me2.github.io/' },

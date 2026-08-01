@@ -20,10 +20,12 @@ export function Nav() {
           }
 
           const isExternal = link.href.startsWith('http');
+          const isFile = /\.(pdf|docx?)$/i.test(link.href);
           return (
             <a
               key={link.label}
               href={link.href}
+              download={isFile ? true : undefined}
               target={isExternal ? '_blank' : undefined}
               rel={isExternal ? 'noopener noreferrer' : undefined}
               className="hover:underline hover:decoration-dashed hover:underline-offset-4"
