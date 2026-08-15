@@ -44,6 +44,11 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'CodexMicro Driver',
+    href: 'https://github.com/build4me2/codexmicro-driver',
+    meta: 'C · KERNEL MODULE · LINUX',
+  },
+  {
     title: 'Chiya Pasal',
     href: 'https://github.com/autonome-research/chiya-pasal',
     meta: 'TYPESCRIPT · SQLITE · LLM AGENTS',
