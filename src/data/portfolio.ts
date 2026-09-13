@@ -12,7 +12,7 @@ export const experience = [
   {
     organization: 'AUTONOME RESEARCH LABS',
     href: 'https://autonomeresearch.com/',
-    role: 'Co-Founder',
+    role: 'Research Lead',
     period: '2025 – PRESENT',
     description:
       'Research collective focused on OSS and products geared towards self-governance.',
