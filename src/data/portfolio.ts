@@ -54,6 +54,11 @@ export const openSource = [
 
 export const projects = [
   {
+    title: 'FourCastNet 3 Finetune',
+    href: 'https://github.com/build4me2/fourcastnet3-finetune',
+    meta: 'PYTHON · WEATHER AI · REGIONAL FINE-TUNING',
+  },
+  {
     title: 'CodexMicro Driver',
     href: 'https://github.com/build4me2/codexmicro-driver',
     meta: 'C · KERNEL MODULE · LINUX',
