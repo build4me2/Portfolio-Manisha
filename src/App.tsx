@@ -5,7 +5,7 @@ import { Entry } from './components/Entry';
 import { Nav } from './components/Nav';
 import { ProjectCard } from './components/ProjectCard';
 import { SectionHeading } from './components/SectionHeading';
-import { email, experience, projects } from './data/portfolio';
+import { email, experience, openSource, projects } from './data/portfolio';
 
 function App() {
   useLayoutEffect(() => {
@@ -53,6 +53,14 @@ function App() {
                 />
               ))}
             </div>
+            <section id="open-source" className="mt-16 scroll-mt-32 md:scroll-mt-24">
+              <SectionHeading delay={100}>Open Source</SectionHeading>
+              <div className="reveal-content space-y-6" style={{ animationDelay: '100ms' }}>
+                {openSource.map((item) => (
+                  <Entry key={item.title} {...item} />
+                ))}
+              </div>
+            </section>
           </div>
 
           <div id="projects" className="scroll-mt-32 md:scroll-mt-24">

@@ -42,6 +42,16 @@ export const experience = [
   },
 ];
 
+export const openSource = [
+  {
+    title: 'TAPESTRY · THE AI ALLIANCE',
+    href: 'https://github.com/The-AI-Alliance/tapestry',
+    description:
+      'Built model-update validation and checkpoint fingerprint checks for consortium training. Fixed contribution build targets and added a CI regression check.',
+    meta: 'PYTHON · PYTORCH',
+  },
+];
+
 export const projects = [
   {
     title: 'CodexMicro Driver',
@@ -52,6 +62,11 @@ export const projects = [
     title: 'Chiya Pasal',
     href: 'https://github.com/autonome-research/chiya-pasal',
     meta: 'TYPESCRIPT · SQLITE · LLM AGENTS',
+  },
+  {
+    title: 'Hephaestus',
+    href: 'https://github.com/autonome-research/hephaestus',
+    meta: 'PYTHON · BUILD123D · PARAMETRIC CAD',
   },
   {
     title: 'Basic File System',
