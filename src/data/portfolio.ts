@@ -50,6 +50,13 @@ export const openSource = [
       'Built model-update validation and checkpoint fingerprint checks for consortium training. Fixed contribution build targets and added a CI regression check.',
     meta: 'PYTHON · PYTORCH',
   },
+  {
+    title: 'TORCHLEAN · LEANDOJO',
+    href: 'https://github.com/lean-dojo/TorchLean',
+    description:
+      'Fixed the α,β-CROWN leaf-artifact exporter so a supplied input-property root is applied on re-export. Repaired CITATION.cff to pass CFF 1.2.0 validation with the full author list.',
+    meta: 'LEAN 4 · PYTHON · NN VERIFICATION',
+  },
 ];
 
 export const projects = [
